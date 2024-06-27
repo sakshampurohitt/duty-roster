@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FBF7F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #EED2CC;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar button {
+    background-color: #E8998D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navbar button:hover {
+    background-color: #d27a73;
+}
+
+.container {
+    background-color: #EED2CC;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 800px; /* Increased width for better table display */
+    margin-top: 20px;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    color: #E8998D;
+    font-size: 24px;
+}
+
+.container h3 {
+    margin-top: 20px;
+    color: #333;
+    font-size: 20px;
+}
+
+.container label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="number"],
+.container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.container button {
+    background-color: #E8998D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.container button:hover {
+    background-color: #d27a73;
+}
+
+.container a {
+    display: block;
+    margin-top: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.container a:hover {
+    color: #E8998D;
+}
+
+.success {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+table th {
+    background-color: #E8998D;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table a {
+    color: #E8998D;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+    
+    .container h2 {
+        font-size: 20px;
+    }
+    
+    .container button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .navbar button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    table, table th, table td {
+        font-size: 14px;
+    }
+}
